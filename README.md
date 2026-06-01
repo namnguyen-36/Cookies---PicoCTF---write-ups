@@ -4,6 +4,7 @@ xin chào các bạn hôm nya mình sẽ hướng dẫn các bạn giải challe
 **Link:** http://challenge01.root-me.org/web-serveur/ch68/
 Mở URL của challenge ta nhận được một giao diện web sau.
 <img width="527" height="242" alt="Screenshot 2026-05-26 214654" src="https://github.com/user-attachments/assets/7ea9fd27-508a-422c-8fda-bd18c23d4903" />
+
 Theo như phần gợi ý của đề bài. Chỉ cần địa chỉ Ip của máy bạn nằm trong dải ip nội bộ (mạng Lan) là có thể đăng nhập vào web mà không cần đến `password` và `username`.
 Vì vậy chúng ta sẽ chèn thêm trường HTTP - Ip vào request header với cú pháp `x-Fowarded-For: <clientIP>, <proxy1>, <proxy2>`
 Ta sẽ dùng Burp Suite để thêm trường http -ip vào
